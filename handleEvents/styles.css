@@ -1,0 +1,22 @@
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.title {
+  color: #3278b9;
+}
+.search {
+  height: 47px;
+  width: 80%;
+}
+.player {
+  width: 100px;
+  height: 100px;
+  background: green;
+}
