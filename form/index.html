@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de superhéroes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="form-container">
+      <h1 class="form-container__title">
+        ¡Sé un nuevo superhéroe en nuestro equipo!
+      </h1>
+      <form class="form" name="superHeroe">
+        <label class="form__label" for="nombre">Nombre del superhéroe</label>
+        <input
+          type="text"
+          class="form__input"
+          minlength="3"
+          maxlength="20"
+          required
+          placeholder="Introduce tu nombre de superhéroe"
+          id="nombre"
+          name="nombre"
+        />
+
+        <label class="form__label" for="nivel">Nivel de poder</label>
+        <input
+          type="number"
+          class="form__input"
+          min="1"
+          max="10"
+          required
+          placeholder="Ingresa tu nivel de poder del 1 al 10"
+          id="nivel"
+          name="nivel"
+        />
+
+        <label class="form__label" for="correoElectrónico"
+          >Correo electrónico</label
+        >
+        <input
+          type="email"
+          class="form__input"
+          required
+          placeholder="Introduce tu correo electrónico"
+          id="correoElectrónico"
+          name="correoElectrónico"
+        />
+
+        <label class="form__label" for="contraseña">Contraseña</label>
+        <input
+          type="password"
+          class="form__input"
+          minlength="6"
+          maxlength="8"
+          required
+          placeholder="Introduce tu contraseña"
+          id="contraseña"
+          name="contraseña"
+        />
+
+        <label class="form__label" for="fechaDeNacimiento"
+          >Fecha de nacimiento</label
+        >
+        <input
+          type="date"
+          class="form__input"
+          required
+          id="fechaDeNacimiento"
+          name="fechaDeNacimiento"
+        />
+
+        <label class="form__label" for="superpoderes"
+          >Lista de superpoderes</label
+        >
+        <textarea
+          rows="4"
+          cols="50"
+          placeholder="Escribe aquí tus superpoderes"
+          required
+          class="form__textarea"
+          id="superpoderes"
+          name="superpoderes"
+        ></textarea>
+
+        <label class="form__label">
+          ¿Con cuál universo de super herores te identificas?
+        </label>
+        <label class="form__label" for="universo1">
+          <input
+            type="radio"
+            value="DC"
+            required
+            id="universo1"
+            name="universo"
+          />
+          DC
+        </label>
+        <label class="form__label" for="universo2">
+          <input
+            type="radio"
+            value="Marvel"
+            required
+            id="universo2"
+            name="universo"
+          />
+          Marvel
+        </label>
+
+        <label class="form__label" for="fortaleza"
+          >¿Cuál es tu mayor fortaleza como superhéroe?</label
+        >
+        <select class="form__select" id="fortaleza" name="fortaleza">
+          <option value="Liderazgo" selected>El liderazgo</option>
+          <option value="Lucha">La lucha</option>
+          <option value="Inteligencia">La inteligencia</option>
+        </select>
+
+        <button class="form__button--submit" type="submit" name="enviar">
+          Registrar
+        </button>
+        <button class="form__button--submit" type="button" name="limpiar">
+          Limpiar
+        </button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
