@@ -2,7 +2,7 @@
 
 body {
   font-family: "Roboto Condensed", sans-serif;
-  background: #000 url("./assets/background.jpg");
+  background: #000 url("./background.jpg");
   background-repeat: repeat;
   background-size: cover;
   background-position: center center;
